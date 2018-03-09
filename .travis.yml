@@ -8,8 +8,9 @@ addons:
     - sourceline: 'deb http://files.freeswitch.org/repo/deb/freeswitch-1.6/ jessie main'
     # - sourceline: 'deb http://ftp.de.debian.org/debian stretch main'
     packages:
-    - librdkafka-dev 
+    - freeswitch
     - libfreeswitch-dev
+    - librdkafka-dev 
 install:
 - "[ $CXX = g++ ] && export CXX=g++-6 || true"
 - "[ $CXX = clang++ ] && export CXX=clang++-3.8 || true"
