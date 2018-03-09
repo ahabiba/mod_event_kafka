@@ -9,8 +9,11 @@ addons:
     # - sourceline: 'deb http://ftp.de.debian.org/debian stretch main'
     packages:
     - freeswitch
+    - libfreeswitch1
+    - libodbc1
     - libfreeswitch-dev
     - librdkafka-dev 
+
 install:
 - "[ $CXX = g++ ] && export CXX=g++-6 || true"
 - "[ $CXX = clang++ ] && export CXX=clang++-3.8 || true"
