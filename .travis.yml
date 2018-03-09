@@ -5,12 +5,10 @@ compiler:
 addons:
   apt:
     sources:
-    - sourceline: 'deb http://files.freeswitch.org/repo/deb/freeswitch-1.6/ jessie main'
+    # - sourceline: 'deb http://files.freeswitch.org/repo/deb/freeswitch-1.6/ jessie main'
     # - sourceline: 'deb http://ftp.de.debian.org/debian stretch main'
     packages:
     - freeswitch
-    - libfreeswitch1
-    - libodbc1
     - libfreeswitch-dev
     - librdkafka-dev 
 
